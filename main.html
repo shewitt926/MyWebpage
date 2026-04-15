@@ -6,30 +6,74 @@
         <title>Shayne's Webpage</title>
         <!-- favicon -->
         <style>
-            .title-bar {text-align: center;}
-            .my-body h2 {text-align: center;}
-        </style>
+            body {
+                background-color: gainsboro;
+            }
+            .title-bar {
+                text-align: center;
+            }
+            .my-body h2 {
+                text-align: center;
+            }
+            .my-body {
+                margin-left: 5rem;
+                margin-right: 5rem;
+            }
+            .about-me {
+                /* make a left align block next to the photo? */
+                display: inline-block;
+            }
+            #photos {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 30em;
+            }
+            </style> 
     </head>
     <body>
         <div class="title-bar", style="text-align: center;">
             <h1>Shayne's Website</h1>
-            <p><strong>Welcome to my personal webpage! I promise I'll make it better, but this is all I got for now.</strong></p>
+            <p><a href="https://linkedin.com/in/shayne-hewitt">LinkedIn Profile</a></p>
             <hr>
         </div>
         <div class="my-body">
-            <h2>About Me</h2>
-            <p>I'm currently a senior college student at the University of Maryland, Baltimore County (UMBC). I will graduate in May 2026 with my Bachelor's of Science in Computer Science, with a focus in Cybersecurity! <i>Go DAWGS!</i></p>
-            <p><mark>TODO:</mark> put a picture of campus?</p>
-            <p>I love all kinds of tech: gaming consoles, PCs, mobile devices--just about anything you can think of with a PCB! My favorite projects are ones that involve restoring my old tech to bring life back to them. 
-            <br><br>
-            I've restored tech such as:
-            <ol>
-                <li>An original Midway Ms. Pac-Man machine</li>
-                <li>A Gameboy Advance SP</li>
-                <li>An Xbox Series X controller</li>
-                <li>Numerous Wii consoles & homebrewing them</li>
-            </ol>
-            </p>
+            <div id="about-me">
+                <h2>About Me</h2>
+                <p>Hello world! My name is Shayne, and I'm currently a senior college student at the University of Maryland, Baltimore County (UMBC). I will graduate in May 2026 with a Bachelor's of Science in Computer Science, with a focus in Cybersecurity. <i>Go DAWGS!</i> My areas of interest are primarily in cryptography and software development.</p> 
+                <img id="photos" src="./photos/campus.JPG" alt="The Quad by the Commons.">
+                <p><mark>TODO:</mark> continue?</p>
+            </div>
+            <div id="experience">
+                <h2>Experience</h2>
+                <h4>Research Intern @ UMBC Department of Computer Science & Electrical Engineering</h4>
+                <h5>Oct. 2025 - Present</h5>
+                <p>With Dr. Yiwen Hu as my supervisor, this position is my first time seeing what goes on in the research scene. I am fascinated with the freedom that researchers have, and I have grown an appreciation towards those who have contributed to papers on their studies! Below are some skills I've learned during this time:</p>
+                <ul>
+                    <li>Debug and reverse engineer Android applications through automatic data processing.</li>
+                    <li>HTTP Toolkit for HTTP inspection and TLS decryption through Frida, a dynamic instrument toolkit.
+                    </li>
+                    <li>Android Open-Source Projects (AOSP) and secure root access on Android platforms (rooting).
+                        <ul>
+                            <li>Using LineageOS and GrapheneOS for easier access to system files</li>
+                        </ul>
+                    </li>
+                    <li>Contribute to research paper for proposal at local cybersecurity conferences. </li>
+                </ul>
+                <h4>Game Master @ Escape This LLC</h4>
+                <h5>May 2025 - March 2026</h5>
+                <p>While this wasn't a job directly in the field of Computer Science, I was able to learn more about IT devices, network configurations, and Virtual Reality (VR) equipment used for entertainment purposes! Here's what I learned:
+                    <ul>
+                        <li>Developed training material on setup, troubleshooting, and safety requirements to ensure equipment was used properly and safely. Employees utilized the troubleshooting steps to swiftly get players back into games.</li>
+                        <li>Designed network infrastructure for virtual reality headsets and continued to ensure proper connections for uninterrupted gameplay.</li>
+                    </ul>
+                </p>
+            </div>
+            <div id="crypto">
+                <h2>CryptoHack</h2>
+                <p><a href="https://cryptohack.org/">CryptoHack</a> is an online CTF-based course for multiple cryptography topics, such as modular arithmetic, symmetric cryptography, public-key cryptography, and elliptic curves. I chose to dive into this for my independent study course in my last semester, and I love it! Here are my notes I took throughout the course:</p>
+                <p><mark>TODO:</mark> code blocks here!</p>
+            </div>
         </div>
     </body>
 </html>
