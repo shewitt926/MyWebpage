@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Shayne's Webpage</title>
         <!-- favicon -->
+        <link rel="icon" type="image/x-icon" href="photos/wanya.png">
         <style>
             body {
                 background-color: gainsboro;
@@ -19,15 +20,36 @@
                 margin-left: 5rem;
                 margin-right: 5rem;
             }
-            .about-me {
-                /* make a left align block next to the photo? */
-                display: inline-block;
+            #intro {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                gap: 1.5rem;
+                flex-wrap: wrap;
             }
-            #photos {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 30em;
+            .intro-text {
+                flex: 1 1 24rem;
+            }
+            .photo-row {
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-start;
+                flex: 0 0 auto;
+            }
+            .photos {
+                width: min(20em, 40vw);
+                height: auto;
+            }
+            @media (max-width: 800px) {
+                #intro {
+                    flex-direction: column;
+                }
+                .photo-row {
+                    justify-content: center;
+                }
+                .photos {
+                    width: min(20em, 80vw);
+                }
             }
             </style> 
     </head>
@@ -38,11 +60,14 @@
             <hr>
         </div>
         <div class="my-body">
-            <div id="about-me">
-                <h2>About Me</h2>
-                <p>Hello world! My name is Shayne, and I'm currently a senior college student at the University of Maryland, Baltimore County (UMBC). I will graduate in May 2026 with a Bachelor's of Science in Computer Science, with a focus in Cybersecurity. <i>Go DAWGS!</i> My areas of interest are primarily in cryptography and software development.</p> 
-                <img id="photos" src="./photos/campus.JPG" alt="The Quad by the Commons.">
-                <p><mark>TODO:</mark> continue?</p>
+            <div id="intro">
+                <div class="intro-text">
+                    <p>Hello world! My name is Shayne, and I'm currently a senior college student at the University of Maryland, Baltimore County (UMBC). I will graduate in May 2026 with a Bachelor's of Science in Computer Science, with a focus in Cybersecurity. <i>Go DAWGS!</i> My areas of interest are primarily in cryptography and software development.</p>
+                    <p></p>
+                </div>
+                <div class="photo-row">
+                    <img class="photos" src="./photos/true_grit.JPG" alt="A photo of me with UMBC's True Grit statue.">
+                </div>
             </div>
             <div id="experience">
                 <h2>Experience</h2>
