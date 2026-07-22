@@ -58,10 +58,10 @@ a:visited {
 .blog-title {
     text-align: center;
 }
-.blog-body {
-    text-align: center;
-    margin-left: 5rem;
-    margin-right: 5rem;
+.blog-body p {
+    text-align: justify;
+    padding-left: 28%;
+    padding-right: 28%;
 }
 .blog-image-row {
     display: flex;
