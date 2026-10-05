@@ -3,6 +3,6 @@ This is my first website I've built for myself that wasn't for a school project.
 
 The website currently showcases a few things, such as:
 - An about me section featuring a picture of yours truly
-- Work experiences regarding Computer Science
+- Work experiences regarding Computer Science/IT
 - CryptoHack notes
 - Blogs! 
